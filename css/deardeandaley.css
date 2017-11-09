@@ -148,6 +148,13 @@
 
 /* Share Buttons */
 
+    #emailthedean {
+        background:#990000;
+        color:#FFCC00;
+        border-radius:50px;
+        font-size:1.5em;
+    }
+
     .fa {
         padding: 10px;
         font-size: 15px !important;
@@ -260,11 +267,6 @@
         background: #ec476b;
     }
 
-    .emailthedean {
-        background:#990000;
-        color:#FFCC00;
-    }
-
 /* MODALS */
 
     .modal {
@@ -362,6 +364,12 @@
         }
 
     /* button styles */
+
+        #emailthedean {
+            width:375px;
+            padding:15px 30px;
+            font-size:1.75em;
+        }
 
         .share-button, .button {
             width: 250px;
