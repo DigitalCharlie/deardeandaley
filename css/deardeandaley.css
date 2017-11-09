@@ -1,97 +1,398 @@
-body {
-    font-family:"helvetica";
-    margin:0px;
-    /*color:#008cba;*/
-    text-align:center;
-    overflow-x: hidden;
-    background-color:#e0e0e0;
-    color:#000000;
-}
+/* NOTES
 
-a.button {
-    display: inline-block;
-    background: #9085a1;
-    text-align: center;
-    width: 100%;
-    height: 60px;
-    line-height: 60px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color:#ffffff;
-    cursor:pointer;
-    margin-top:10px;
-}
+*/
 
-a.button:hover {
-    opacity: .8;
-}
+/* Global stuff */
 
-a.icon:hover {
-    opacity:.8;
-}
+    .hidden {
+        display:none;
+    }
 
-a.button.facebook {
-    background: #3b5998;
+    .clear {
+        clear:both;
+    }
 
-}
+    .no-margin {
+        margin: 0;
+    }
 
-a.button.twitter {
-    background: #37c5d6;
+/* TYPOGRAPHY */
+    body {
+        background-color:#e4e1dd;
+        margin:0;
+        font-family: 'Alegreya', serif;
+    }
 
-}
+    p {
+        font-size: 1em;
+        font-weight:100;
 
-a.button.action {
-    background: #14ac2b;
+    }
 
-}
+    h1 {
+        font-size: 2.8em;
+        font-weight: 900;
+        margin: 20px 0;
+    }
 
-h1 {
-    font-size:3em;
-}
+    h2 {
+        font-size: 2.5em;
+        font-weight: 900;
+        margin: 10px 0;
+    }
 
-h3 {
-    font-size:1em;
-    font-weight:normal;
-}
+    h3 {
 
-p {
-    padding:5px;
-    font-size:18px;
-    text-align:left;
-}
+        font-size:1.5em;
+    }
 
-li {
-    text-align:left;
+    label {
+        display:block;
+    }
+
+    .bold {
+        font-weight:600;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    hr {
+        margin:30px 0;
+    }
+
+
+/* HEADER CSS */
+
+/* FOOTER CSS */
+
+    .footer {
+        background-color: #3e3e3e;
+        color:#fff;
+        text-align: center;
+        width: 100%;
+        font-size: .9em;
+        padding:20px 0;
+    }
+
+    .footerText {
+        margin-top:20px;
+    }
+
+    .circular {
+        border-radius:50%;
+        width:100px;
+    }
+
+
+
+/* MAIN BODY CSS */
+
+    .container {
+        width:95%;
+        max-width:475px;
+        padding:0 2.5% 75px;
+        min-height:85vh;
+        margin:0 auto;
+    }
+
+    .dumpster {
+        text-align:center;
+    }
+
+    .dumpsterimage {
+        width:70px;
+        margin:-15px 0 -20px;
+    }
+
+/* FORM FIELDS */
+
+    .formField, #form-email, #form-zip_code {
+        border:1px solid #bbb;
+        background-color:#f1eeea;
+        border-radius: 3px;
+        padding: 2.5%;
+        font-size: .8em;
+        font-family: 'Alegreya', serif;
+    }
+
+    .formField {
+        width:94% !important;
+        margin: 5px 0 20px;
+    }
+
+    #form-email, #form-zip_code {
+
+    }
+
+    textarea, input {
+        color:#494744;
+    }
+
+    .error_input {
+        outline-color:red;
+    }
+
+    .email-reminder {
+        margin-bottom:10px;
+    }
+
+    .want-an-email {
+        margin-right:8px;
+    }
+
+    #form_col1 {
+        margin-bottom:15px;
+    }
+
+/* Share Buttons */
+
+    .fa {
+        padding: 10px;
+        font-size: 15px !important;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        color:#fff !important;
+        margin: 0 2px;
+    }
+
+    .fa-big {
+        padding: 15px;
+        font-size: 35px !important;
+        width: 35px;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-envelope {
+      background: #f18e1b;
+      color: white;
+    }    
+
+
+    .share-button, .button {
+        width: 100%;
+        margin-bottom:5px;
+    }
+
+    .share-button:hover {
+        background: #ec476b;
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;
+    }
+
+    .shareButtons {
+        width:100%;
+        text-align: center;
+        margin:20px auto;
+    }
+
+    button, .btn, .button {
+        display: inline-block;
+        text-align: center;
+        padding:8px 0;
+        font-size: 18px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:#ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        border-style: none;
+    }
+
+    .button {
+        background: #71d4dd;
+    }
+
+    button, .btn {
+        background: #ec476b;
+    }
+
+    button:hover, .btn:hover {
+        background: #71d4dd;
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;
+    }
+
+    .button:hover {
+        opacity:.6;
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;
+    }
+
+    .donate-button {
+        background-color:#ec476b;
+        width:100%;
+    }
+
+    .donate-button:hover {
+        background: #71d4dd;
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;   
+    }
+
+    .facebook {
+        background: #3b5998;
+    }
+    
+    .twitter {
+        background: #1DA1F2;
+    }
+    
+    .email {
+        background: #ec476b;
+    }
+
+    .emailthedean {
+        background:#990000;
+        color:#FFCC00;
+    }
+
+/* MODALS */
+
+    .modal {
+        height: 96%;
+        width: 95%;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.66);
+        overflow-x: hidden;
+        transition: .7s;
+        padding:2.5%;
+        display:none;
+        opacity:0;
+        transition-duration: .7s;
+        -webkit-transition-duration: .7s;
+    }
+
+    .modalContainer {
+        width: 100%;
+        height: 100%;
+        background-color:#ffffff;
+        border-radius:10px;
+        z-index: 4;
+        color:#1a1a1a;
+        text-align: center;
+    }
+
+    .modalPage {
+        width: 95%;
+        padding:2.5%;
+    }
+
+    .the-x {
+        cursor:pointer;
+        color:grey;
+        position:absolute;
+        top:10px;
+        right:12px;
+        font-size:14px;
+    }
+
+/* Blog Posts on Home Page */
+
+@media screen and (max-width: 375px) {
+
+    #form-email, #form-zip_code {
+        width: 94%;
+        margin-top: 5px;
+    }
+
 }
 
 
 @media screen and (min-width: 500px) {
 
-    body {
-        max-width:80%;
-        width:800px;
-        margin:0 auto;
-        background: url(../images/standoff2.jpg);
-        background-repeat:no-repeat;
-        background-attachment:fixed;
-        background-position:center;
-        color:#e0e0e0;
-    }
+    /* Type */
 
-    a.button {
-        width: 450px;
-        margin: 5px 5px;
-        border-radius: 5px;
-    }
+        body {
+            background-size:100%;
+        }
 
-    h3 {
-        font-size:1.17em;
-        font-weight:bold;
-    }
+        h1 {
+            font-size: 3.5em;
+        }
 
-    ul {
-    margin-left:100px;
-    margin-right:100px;
+        h2 {
+
+        }
+
+        h3 {
+
+        }
+
+        p {
+
+        }
+
+    /* GENERAL DESIGN */
+
+        .dumpster {
+
+        }
+
+        .dumpsterimage {
+
+        }
+
+    /* BODY CSS */
+
+        .container {
+
+        }
+
+    /* button styles */
+
+        .share-button, .button {
+            width: 250px;
+            margin: 10px auto;
+            display: block;
+        }
+
+
+    /* MODALS */
+
+        .modalContainer {
+            position: relative;
+            width: 600px;
+            height: 500px;
+            max-height:90vh;
+            margin:-250px auto;
+            top:48%;
+        }
+
+        .modalContainer h1 {
+            margin:0 auto 10px;
+            width:500px;
+        }
+
+        .formIcon {
+            width:75px;
+            margin:-5px auto;
+        }
+
+        .formIcon.share {
+            margin-top:5px;
+        }
+
 }
