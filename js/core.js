@@ -14,10 +14,6 @@ $(function() {
       }, 50);
     };
 
-    setTimeout(function(){
-      showModal('#shareModal');
-    }, 1000);
-
     $("#shareX").click(function() {
       hideModal('#shareModal');
     });
