@@ -136,28 +136,28 @@
         var whichsubject=Math.round(Math.random()*(f-1));
 
         var address=new Array();
-        body[0] = "&body=Address 0";
-        body[1] = "&body=Address 1";
-        body[2] = "&body=Email Address 2";
-        body[3] = "&body=Email Address 3";
+        address[0] = "&body=Email Address 0%2C";
+        address[1] = "&body=Email Address 1%2C";
+        address[2] = "&body=Email Address 2%2C";
+        address[3] = "&body=Email Address 3%2C";
 
         var f = address.length;
         var whichaddress=Math.round(Math.random()*(f-1));
 
         var body=new Array();
-        body[0] = "%2C%2CBody 0";
-        body[1] = "%2C%2CBody 1";
-        body[2] = "%2C%2CBody 2";
-        body[3] = "%2C%2CBody 3";
+        body[0] = "%0A%0ABody 0";
+        body[1] = "%0A%0ABody 1";
+        body[2] = "%0A%0ABody 2";
+        body[3] = "%0A%0ABody 3";
 
         var f = body.length;
         var whichbody=Math.round(Math.random()*(f-1));
 
         var signature=new Array();
-        body[0] = "%2C%2CEmail Signature 0";
-        body[1] = "%2C%2CEmail Signature 1";
-        body[2] = "%2C%2CEmail Signature 2";
-        body[3] = "%2C%2CEmail Signature 3";
+        signature[0] = "%0A%0AEmail Signature 0";
+        signature[1] = "%0A%0AEmail Signature 1";
+        signature[2] = "%0A%0AEmail Signature 2";
+        signature[3] = "%0A%0AEmail Signature 3";
 
         var f = signature.length;
         var whichsignature=Math.round(Math.random()*(f-1));
