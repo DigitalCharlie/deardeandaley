@@ -121,10 +121,10 @@
 <script>
 
     function emailthedean() {
-    document.getElementById('emailthedean').href = emails+subject[whichsubject]+body[whichbody];
+    document.getElementById('emailthedean').href = emails+subject[whichsubject]+address[whichaddress]+body[whichbody]+signature[whichsignature];
     }
 
-        var emails="mailto:acortes@oakland.net;mhunt@oakland.net;alujan@oakland.net;pmoore@oakland.net;tmoss@oakland.net;snosakhare@oakland.net;kordaz@oakland.net;lschaaf@oakland.net;msze@oakland.net;ederryck@oakland.net;officeofthemayor@oaklandnet.com?"
+        var emails="mailto:acortes@oakland.net;mhunt@oakland.net;alujan@oakland.net;pmoore@oakland.net;tmoss@oakland.net;snosakhare@oakland.net;kordaz@oakland.net;lschaaf@oakland.net;msze@oakland.net;ederryck@oakland.net;officeofthemayor@oaklandnet.com?bcc=cfurman@usc.edu&"
 
         var subject=new Array();
         subject[0] = "subject=subject0";
@@ -135,6 +135,15 @@
         var f = subject.length;
         var whichsubject=Math.round(Math.random()*(f-1));
 
+        var address=new Array();
+        body[0] = "&address=Email Address 0";
+        body[1] = "&address=Email Address 1";
+        body[2] = "&address=Email Address 2";
+        body[3] = "&address=Email Address 3";
+
+        var f = address.length;
+        var whichaddress=Math.round(Math.random()*(f-1));
+
         var body=new Array();
         body[0] = "&body=Email Body 0";
         body[1] = "&body=Email Body 1";
@@ -143,6 +152,15 @@
 
         var f = body.length;
         var whichbody=Math.round(Math.random()*(f-1));
+
+        var signature=new Array();
+        body[0] = "&signature=Email Signature 0";
+        body[1] = "&signature=Email Signature 1";
+        body[2] = "&signature=Email Signature 2";
+        body[3] = "&signature=Email Signature 3";
+
+        var f = signature.length;
+        var whichsignature=Math.round(Math.random()*(f-1));
 
     emailthedean();
 </script>
