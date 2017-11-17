@@ -142,7 +142,7 @@
 
 /* Share Buttons */
 
-    #emailthedean, .emailthedean {
+    #emailthedean {
         background:#990000;
         color:#FFCC00;
         border-radius:50px;
@@ -219,7 +219,8 @@
     }
 
     .button {
-        background: #71d4dd;
+        background:#990000;
+        color:#FFCC00;
     }
 
     button, .btn {
@@ -363,7 +364,7 @@
 
     /* button styles */
 
-        #emailthedean, .emailthedean {
+        #emailthedean {
             width:375px;
             padding:15px 30px;
             font-size:1.75em;
